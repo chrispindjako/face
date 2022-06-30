@@ -16,7 +16,7 @@ To get started you will need to know how to use JSON files and know the SQL lang
 _Windows_:
 [The steps to install program....](https://docs.microsoft.com/en-us/dotnet/framework/windows-services/how-to-install-and-uninstall-services)
 
-## Startup
+## Structure
 ```bash
 ├── config                                   # main configuration folder
 │   │── datasource                           # datasource configuration folder
