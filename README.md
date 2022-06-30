@@ -28,6 +28,8 @@ _Windows_:
 │   ├── get-user-data-example.json           # example configuration for API
 │   └── ...
 └── face.jar
+
+Test with GET localhost:9100/api/get-user-data-example?gender=M
 ```
 ## Made with
 
