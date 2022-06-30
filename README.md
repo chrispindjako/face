@@ -17,7 +17,7 @@ _Windows_:
 [The steps to install program....](https://docs.microsoft.com/en-us/dotnet/framework/windows-services/how-to-install-and-uninstall-services)
 
 ## Startup
-
+```bash
 ├── config                                   # main configuration folder
 │   │── datasource                           # datasource configuration folder
 │   │   ├── user-datasource-example.json     # example configuration for datasource 
@@ -28,7 +28,7 @@ _Windows_:
 │   ├── get-user-data-example.json           # example configuration for API
 │   └── ...
 └── face.jar
-
+```
 ## Made with
 
 * [Spring Boot](https://spring.io/projects/spring-boot) - Spring Boot is an open source Java-based framework used to create a micro Service.
