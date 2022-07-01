@@ -2,7 +2,7 @@
     "datasource": "user-datasource-example",
     
     "query": {
-        "select": "fisrtname, lastname, birthday, gender",
+        "select": "firstname, lastname, birthday, gender",
         "from": "users",
         "where": "gender = ':gender'",
         "orderby": "id"

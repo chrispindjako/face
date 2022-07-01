@@ -1,8 +1,8 @@
 {
     "type": "TSQL",
-    "server": "IP_ADRESSS",
+    "server": "172.23.214.165",
     "port": null,
-    "database": "DB_NAME",
-    "user": "USER_NAME",
-    "password": "MY_PASSWORD"
+    "database": "EXAMPLE_DB",
+    "user": "EAMDBT2",
+    "password": "tHJWbRECczZzNUhk4zFz2HMRD"
 }

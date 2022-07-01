@@ -16,21 +16,75 @@ To get started you will need to know how to use JSON files and know the SQL lang
 _Windows_:
 [The steps to install program....](https://docs.microsoft.com/en-us/dotnet/framework/windows-services/how-to-install-and-uninstall-services)
 
-## Structure
+### Structure
 ```bash
 ├── config                                   # main configuration folder
 │   │── datasource                           # datasource configuration folder
-│   │   ├── user-datasource-example.json     # example configuration for datasource 
+│   │   ├── ...                              
 │   │   └── ...
 │   ├── security                             # security configuration folder
+│   │   ├── ...                              
+│   │   └── ...
+│   ├── ...                                  
+│   └── ...
+└── face.jar                                 # Java Archive
+
+Test with GET localhost:9100/api/get-user-data-example?gender=M
+```
+### Demo
+
+```bash
+
+# Structure
+
+├── config                                   
+│   │── datasource                           
+│   │   ├── user-datasource-example.json     # example configuration for datasource 
+│   │   └── ...
+│   ├── security                             
 │   │   ├── user-security-example.json       # example configuration for security 
 │   │   └── ...
 │   ├── get-user-data-example.json           # example configuration for API
 │   └── ...
-└── face.jar
+└── face.jar        
 
-Test with GET localhost:9100/api/get-user-data-example?gender=M
+# user-datasource-example.json 
+{
+    "type": "TSQL",
+    "server": "IP_ADRESSS",
+    "port": null,
+    "database": "DB_NAME",
+    "user": "USER_NAME",
+    "password": "MY_PASSWORD"
+}
+
+# user-security-example.json 
+{
+    "Authorization": "MY_AUTH_CODE"
+}
+
+# get-user-data-example.json
+{
+    "datasource": "user-datasource-example",
+    
+    "query": {
+        "select": "firstname, lastname, birthday, gender",
+        "from": "users",
+        "where": "gender = ':gender'",
+        "orderby": "id"
+    },
+    
+   "security": "user-security-example"
+}
+
 ```
+
+![Creation of the database and insertion of data](https://github.com/chrispindjako/face/demo/Capture-0.PNG)
+
+![Test 1](https://github.com/chrispindjako/face/demo/Capture-1.PNG)
+
+![Test 2](https://github.com/chrispindjako/face/demo/Capture-1.PNG)
+
 ## Made with
 
 * [Spring Boot](https://spring.io/projects/spring-boot) - Spring Boot is an open source Java-based framework used to create a micro Service.
