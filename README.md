@@ -79,11 +79,11 @@ Test with GET localhost:9100/api/get-user-data-example?gender=M
 
 ```
 
-![Creation of the database and insertion of data](https://github.com/chrispindjako/face/demo/Capture-0.PNG)
+![Creation of the database and insertion of data](https://github.com/chrispindjako/face/blob/main/demo/Capture-0.PNG?raw=true)
 
-![Test 1](https://github.com/chrispindjako/face/demo/Capture-1.PNG)
+![Test 1](https://github.com/chrispindjako/face/blob/main/demo/Capture-1.PNG?raw=true)
 
-![Test 2](https://github.com/chrispindjako/face/demo/Capture-1.PNG)
+![Test 2](https://github.com/chrispindjako/face/blob/main/demo/Capture-2.PNG?raw=true)
 
 ## Made with
 
