@@ -50,7 +50,7 @@ Test with GET localhost:9100/api/get-user-data-example?gender=M
 
 # user-datasource-example.json 
 {
-    "type": "TSQL",
+    "type": "TSQL",                          # MYSQL (MySql), TSQL (Sql Server), PLSQL (Oracle Sql), POSTGRES (PostgreSQL)
     "server": "IP_ADRESSS",
     "port": null,
     "database": "DB_NAME",
